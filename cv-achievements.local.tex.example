@@ -1,0 +1,12 @@
+% Copy to: cv-achievements.local.tex (do not commit) and replace placeholders
+% with your real achievements. Keep wording aligned with employer NDA / policies.
+\boolfalse{CVAchievementsPublic}
+\renewcommand{\PlayrixAchOne}{%
+\textit{[Achievement 1: e.g.\ scope, impact, product area --- keep numbers only if allowed to disclose.]}%
+}
+\renewcommand{\PlayrixAchTwo}{%
+\textit{[Achievement 2: e.g.\ quality, process, metrics --- omit or generalize if sensitive.]}%
+}
+\renewcommand{\PlayrixAchThree}{%
+\textit{[Achievement 3: e.g.\ mentoring, leadership, org impact.]}%
+}

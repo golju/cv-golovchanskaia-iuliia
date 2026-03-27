@@ -1,0 +1,5 @@
+% Copy to: cv-contact.local.tex (do not commit)
+\boolfalse{CVContactPublic}
+\renewcommand{\CVEmail}{you@example.com}
+\renewcommand{\CVPhone}{+000 00 000 0000}
+\renewcommand{\CVTelegram}{your_telegram_username}

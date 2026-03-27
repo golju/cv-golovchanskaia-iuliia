@@ -1,0 +1,15 @@
+# Local-only contacts (real email / phone / Telegram)
+cv-contact.local.tex
+
+# Full achievements (NDA-sensitive detail)
+cv-achievements.local.tex
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf

@@ -1,0 +1,218 @@
+%-------------------------------------------------------------------------------
+%	autoCV template (MIT License, Jitin Nair)
+%	Adapted for Iuliia Golovchanskaia
+%-------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\bfseries\scshape\raggedright\color{darkgray}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\usepackage{fontawesome5}
+\usepackage{etoolbox}
+\newbool{CVContactPublic}
+\newbool{CVAchievementsPublic}
+
+\input{cv-contact-public}
+\InputIfFileExists{cv-contact.local.tex}{\input{cv-contact.local.tex}}{}
+
+\input{cv-achievements-public}
+\InputIfFileExists{cv-achievements.local.tex}{\input{cv-achievements.local.tex}}{}
+
+%----------------------------------------------------------------------------------------
+%	COMPACT LIST
+%----------------------------------------------------------------------------------------
+\newlist{joblist}{itemize}{1}
+\setlist[joblist]{nosep, leftmargin=1.2em, itemsep=2pt, label=\textbullet}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	HEADER
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Iuliia Golovchanskaia} \\[5pt]
+\large{\textbf{Senior C++ Developer}} \\[7.5pt]
+\ifboolexpr{ test {\ifdefempty{\CVEmail}} and test {\ifdefempty{\CVPhone}} }{
+\raisebox{-0.05\height}\faEnvelope\ {\small\color{gray}\CVStubEmailDisplay} \ $|$\ \raisebox{-0.05\height}\faMobile\ {\small\color{gray}\CVStubPhoneDisplay}%
+}{
+\ifdefempty{\CVEmail}{}{%
+\href{mailto:\CVEmail}{\raisebox{-0.05\height}\faEnvelope\ \CVEmail}%
+}%
+\ifdefempty{\CVPhone}{}{%
+\ifdefempty{\CVEmail}{}{ \ $|$\ }%
+\raisebox{-0.05\height}\faMobile\ \CVPhone%
+}%
+}%
+\ \ $|$\ \raisebox{-0.05\height}\faGlobe\ Cyprus \\[3pt]
+\href{https://www.linkedin.com/in/iuliia-golovchanskaia}{\raisebox{-0.05\height}\faLinkedin\ iuliia-golovchanskaia} \ $|$ \
+\href{https://github.com/golju}{\raisebox{-0.05\height}\faGithub\ golju}%
+\ \ $|$\ %
+\ifdefempty{\CVTelegram}{%
+\raisebox{-0.05\height}\faTelegram\ {\small\color{gray}\CVStubTelegramDisplay}%
+}{%
+\href{https://t.me/\CVTelegram}{\raisebox{-0.05\height}\faTelegram\ \CVTelegram}%
+} \\
+\end{tabularx}
+
+\ifboolexpr{ test {\ifbool{CVContactPublic}} or test {\ifbool{CVAchievementsPublic}} }{
+\begin{center}
+{\small\itshape\color{darkgray}
+Public repository version: NDA-sensitive achievements and direct contact details are omitted. A complete CV is available on request.}
+\end{center}
+\vspace{2pt}
+}{}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Summary}
+8 years of experience in game development and computer vision. Owns game event features end-to-end at Playrix (Fishdom, 545M+ downloads, 15M MAU). Covers full cycle from architecture design to live-ops delivery. Drives engineering quality and AI-assisted development practices.
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{C++ (17/20)} & STL, RAII, move semantics, design patterns \\
+\textbf{Performance} & Multithreading (std::thread, POSIX Threads, CUDA), SIMD (NEON, SSE), profiling (Tracy), neural network inference optimization \\
+\textbf{Testing} & Unit testing (Google Test) \\
+\textbf{Tools \& Platforms} & Git, bash, CI/CD (TeamCity), macOS, Linux, Windows, Qt, CMake \\
+\textbf{AI \& Tooling} & AI-assisted development (Cursor), building internal AI agents, Developer Enablement \\
+\textbf{Domains} & Mobile GameDev, classical computer vision (OpenCV), real-time systems \\
+\textbf{Engineering Practices} & Design Reviews, Code Review, Agile/Scrum, task decomposition, mentoring \& teaching \\
+\textbf{Other Languages} & Python \\
+\textbf{English} & Upper-Intermediate (B2) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Work Experience (8 Years)}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Playrix $|$ Lead Programmer} & 01.2022 -- Present \\
+\small Promoted from Programmer (2023) & \small \textbf{Fishdom} --- match-3 mobile game, 545M+ downloads, 15M MAU \\
+\end{tabularx}
+
+\smallskip\noindent\textit{Responsibilities:}
+\begin{joblist}
+\item Owned architecture and end-to-end implementation of complex game event systems: state machine-driven lifecycle, progression and reward logic, analytics pipelines, and live-ops content delivery.
+\item Drove AI-assisted development (Cursor) into engineering workflows, building internal AI agents that improved engineering speed and code quality across feature teams.
+\item Established engineering standards: design reviews, code review processes, delivery quality gates, and developer performance evaluation guidelines.
+\end{joblist}
+
+\smallskip\noindent\textit{Achievements:}
+\begin{joblist}
+\item \PlayrixAchOne
+\item \PlayrixAchTwo
+\item \PlayrixAchThree
+\end{joblist}
+
+\medskip\begin{center}\color{gray}\rule{0.3\linewidth}{0.3pt}\end{center}\vspace{-2pt}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Higher School of Economics $|$ C++ Instructor, Saint Petersburg} & 09.2021 -- 11.2022 \\
+\end{tabularx}
+\vspace{-2pt}
+Taught undergraduate students the fundamentals of C++ programming, including algorithms, data structures, and software development best practices.
+
+\medskip\begin{center}\color{gray}\rule{0.3\linewidth}{0.3pt}\end{center}\vspace{-2pt}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Computer Vision Systems $|$ Software Engineer, Saint Petersburg} & 06.2020 -- 12.2021 \\
+\small Outsource company delivering computer vision solutions for enterprise clients (oil industry, Huawei) & \\
+\end{tabularx}
+
+\smallskip\noindent\textit{Responsibilities:} Developed software for industrial computer vision systems (quality control automation) and urban 3D reconstruction, including city-scale modeling, performance optimization, and service-level communication.
+
+\smallskip\noindent\textit{Achievements:}
+\begin{joblist}
+\item Designed and integrated RPC-based service communication (rpclib), enabling real-time data exchange between distributed system components.
+\item Refactored core computation libraries, achieving a 53\% performance improvement.
+\item Built camera management desktop tools (Qt) used by field engineers for calibration and monitoring.
+\end{joblist}
+
+\medskip\begin{center}\color{gray}\rule{0.3\linewidth}{0.3pt}\end{center}\vspace{-2pt}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Simicon $|$ Software Engineer, Saint Petersburg} & 08.2018 -- 06.2020 \\
+\small Traffic camera systems for road safety and automated violation detection & \\
+\end{tabularx}
+
+\smallskip\noindent\textit{Responsibilities:} Developed software components focused on real-time data processing, computer vision, and neural network integration.
+
+\smallskip\noindent\textit{Achievements:}
+\begin{joblist}
+\item Built data management desktop tools (Qt, PyQt) for operators working with traffic camera systems.
+\item Accelerated neural network inference 8x through vectorization (NEON, CUDA), enabling real-time processing on edge devices.
+\item Integrated neural networks into production software using CUDA and POSIX Threads for parallel execution.
+\item Developed computer vision algorithms for automated traffic violation detection and road situation analysis.
+\end{joblist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+Master's degree, Software Engineering --- \textbf{ITMO University} & 2022 \\[3pt]
+Bachelor's degree, Applied Mathematics and Computer Science --- \textbf{Saint Petersburg State University} & 2019 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{Certifications}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{AI-Assisted Programming} --- \textbf{NEBIUS} & 2025 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PUBLIC SPEAKING
+%----------------------------------------------------------------------------------------
+\section{Public Speaking}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Invited Expert & C++ Russia (2020, 2022), PiterPy \\
+Host & C++ Russia (2020--2023), YaTalks 2023, C++ Zero Cost Serbia 2023 \\
+Speaker & PyLadies Meetup: 3D Scene Reconstruction using OpenCV \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Scientific Publications}
+\begin{itemize}[leftmargin=1.2em, itemsep=5pt, label=\textbullet]
+\item Building a mixed reality system free from visual discomfort, Proc.\ SPIE 11876, 12.9.2021 \\
+\href{https://doi.org/10.1117/12.2597182}{\underline{doi.org/10.1117/12.2597182}}
+\item Real-time tracking of surrounding objects in augmented and mixed reality applications, Proc.\ SPIE 11897, 9.10.2021 \\
+\href{https://doi.org/10.1117/12.2604208}{\underline{doi.org/10.1117/12.2604208}}
+\end{itemize}
+
+\end{document}
