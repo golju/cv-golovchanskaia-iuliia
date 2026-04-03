@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iuliia Golovchanskaia — Senior C++ Software Engineer</title>
+  <meta name="description" content="Senior C++ Software Engineer · 8 years of performance-critical C++ across gamedev, computer vision, and embedded systems.">
+  <meta property="og:title" content="Iuliia Golovchanskaia — Senior C++ Software Engineer">
+  <meta property="og:description" content="8 years of performance-critical C++ across gamedev, computer vision, and embedded systems.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23004F90' width='32' height='32' rx='6'/><text x='16' y='22' fill='white' font-family='system-ui' font-size='16' font-weight='bold' text-anchor='middle'>IG</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --secondary: #555;
+      --muted: #888;
+      --accent: #004F90;
+      --border: #e5e5e5;
+      --bg: #fff;
+      --font: 'Source Sans 3', 'Source Sans Pro', -apple-system, system-ui, sans-serif;
+      --max-w: 680px;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: var(--font); color: var(--text); background: var(--bg); line-height: 1.65; padding: 4rem 1.5rem; }
+    main { max-width: var(--max-w); margin: 0 auto; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
+    .hero .role { font-size: 1.05rem; color: var(--secondary); margin-bottom: 1.2rem; }
+    .hero .tagline { font-size: 0.95rem; color: var(--secondary); max-width: 520px; margin: 0 auto 1.2rem; line-height: 1.6; }
+    .hero nav a { font-weight: 600; font-size: 0.95rem; }
+    .hero nav .sep { color: var(--muted); margin: 0 0.4rem; }
+
+    section { margin-bottom: 2.5rem; }
+    section h2 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    #about p { line-height: 1.7; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.35rem 1.5rem;
+      font-size: 0.93rem;
+    }
+    .skills-grid dt { font-weight: 600; white-space: nowrap; }
+    .skills-grid dd { color: var(--secondary); }
+
+    .job { margin-bottom: 1.6rem; }
+    .job:last-child { margin-bottom: 0; }
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+    }
+    .job-head h3 { font-size: 1rem; font-weight: 600; }
+    .job-head .dates { font-size: 0.88rem; color: var(--muted); white-space: nowrap; }
+    .job-ctx { font-size: 0.9rem; color: var(--secondary); margin: 0.15rem 0 0.5rem; font-style: italic; }
+    .job ul { padding-left: 1.2rem; font-size: 0.93rem; }
+    .job li { margin-bottom: 0.25rem; }
+    .job li:last-child { margin-bottom: 0; }
+
+    .meta-line { font-size: 0.93rem; margin-bottom: 0.35rem; }
+    .meta-line:last-child { margin-bottom: 0; }
+
+    .edu-line { font-size: 0.93rem; margin-bottom: 0.3rem; }
+    .edu-line:last-child { margin-bottom: 0; }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    @media print {
+      body { padding: 0; font-size: 10.5pt; }
+      .hero { border-bottom: none; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+      section { margin-bottom: 1.5rem; }
+      a { color: var(--text); text-decoration: none; }
+      footer { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 2.5rem 1.25rem; }
+      .hero h1 { font-size: 1.7rem; }
+      .hero .role { font-size: 0.95rem; }
+      .skills-grid { grid-template-columns: 1fr; gap: 0.15rem; }
+      .skills-grid dt { margin-top: 0.6rem; }
+      .skills-grid dt:first-child { margin-top: 0; }
+      .job-head { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <header class="hero">
+      <h1>Iuliia Golovchanskaia</h1>
+      <p class="role">Senior C++ Software Engineer · Cyprus</p>
+      <p class="tagline">Eight years building performance-critical C++ — from real-time computer vision on embedded devices to game features serving millions of players.</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/iuliia-golovchanskaia">LinkedIn</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/golju">GitHub</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>8 years of experience in performance-critical C++ across multiple domains. Own game event features end-to-end on Fishdom (545M+ downloads, 15M MAU), from architecture to live-ops. Previously worked on industrial computer vision, 3D reconstruction, and real-time traffic analysis on embedded devices. Focus on delivery, product-minded engineering, and AI-assisted workflows.</p>
+    </section>
+
+    <section id="expertise">
+      <h2>Core Expertise</h2>
+      <dl class="skills-grid">
+        <dt>C++ (C++17/20)</dt>
+        <dd>STL (containers/algorithms), templates, RAII, smart pointers, move semantics, OOP, exception safety</dd>
+        <dt>Domains</dt>
+        <dd>Real-time systems, performance-critical C++ (mobile, embedded), computer vision (OpenCV)</dd>
+        <dt>Performance</dt>
+        <dd>Profiling (Tracy), latency reduction, memory optimization</dd>
+        <dt>Toolchain &amp; Platforms</dt>
+        <dd>CMake, Git, bash, CI/CD (TeamCity), Linux/macOS/Windows, Visual Studio, CLion, Qt</dd>
+        <dt>AI &amp; Tooling</dt>
+        <dd>LLM-assisted development, internal developer tools / AI agents, Developer Enablement</dd>
+        <dt>Concurrency</dt>
+        <dd>std::thread, POSIX Threads, synchronization primitives</dd>
+        <dt>GPU / Acceleration</dt>
+        <dd>CUDA, SIMD (NEON, SSE), neural network inference optimization</dd>
+        <dt>Engineering Practices</dt>
+        <dd>Design Review, Code Review, Agile/Scrum, task decomposition, performance evaluation, mentoring &amp; teaching</dd>
+        <dt>Testing &amp; Quality</dt>
+        <dd>Unit testing (Google Test), static analysis (PVS-Studio)</dd>
+        <dt>Other Languages</dt>
+        <dd>Python (prototyping, research, tooling)</dd>
+      </dl>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Playrix · Lead Programmer</h3>
+          <span class="dates">2022 – present</span>
+        </div>
+        <p class="job-ctx">Fishdom — match-3 mobile game, 545M+ downloads, 15M MAU. Promoted from Programmer (2023).</p>
+        <ul>
+          <li>Own architecture and end-to-end delivery of game event systems: state machine lifecycle, progression and reward logic, analytics pipelines, live-ops content</li>
+          <li>Drove AI-assisted development (Cursor) into engineering workflows; built internal AI agents improving speed and code quality across feature teams</li>
+          <li>Established engineering standards: design reviews, code review processes, delivery quality gates, and developer performance evaluation guidelines</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Computer Vision Systems · Software Engineer</h3>
+          <span class="dates">2020 – 2021</span>
+        </div>
+        <p class="job-ctx">Industrial computer vision and urban 3D reconstruction for enterprise clients (oil industry, Huawei).</p>
+        <ul>
+          <li>Developed software for industrial computer vision systems (quality control automation) and urban 3D reconstruction, including city-scale modeling, performance optimization, and service-level communication</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Simicon · Software Engineer</h3>
+          <span class="dates">2018 – 2020</span>
+        </div>
+        <p class="job-ctx">Traffic camera systems for road safety and automated violation detection.</p>
+        <ul>
+          <li>Developed software components for real-time data processing, computer vision, and neural network integration</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Higher School of Economics · C++ Instructor</h3>
+          <span class="dates">2021 – 2022</span>
+        </div>
+        <p class="job-ctx">Taught undergraduate C++ programming: algorithms, data structures, software development practices.</p>
+      </article>
+    </section>
+
+    <section id="speaking">
+      <h2>Speaking &amp; Publications</h2>
+      <p class="meta-line"><strong>Conferences</strong> — C++ Russia (invited expert and host, 2020–2023) · YaTalks 2023 · C++ Zero Cost Serbia 2023 · PiterPy · PyLadies</p>
+      <p class="meta-line"><strong>Publications</strong> — SPIE proceedings (2021): <a href="https://doi.org/10.1117/12.2597182">Mixed reality systems</a> · <a href="https://doi.org/10.1117/12.2604208">Real-time object tracking in AR/MR</a></p>
+    </section>
+
+    <section id="education">
+      <h2>Education &amp; Certifications</h2>
+      <p class="edu-line"><strong>MSc</strong> Software Engineering — ITMO University (2022)</p>
+      <p class="edu-line"><strong>BSc</strong> Applied Mathematics and Computer Science — Saint Petersburg State University (2019)</p>
+      <p class="edu-line"><strong>Cert</strong> <a href="https://github.com/golju/cv-golovchanskaia-iuliia/blob/main/certificates/NEBIUS_AI-Assisted_Programming_2025.pdf">AI-Assisted Programming</a> — Nebius Academy (2025)</p>
+    </section>
+
+    <footer>
+      Full CV with detailed achievements available on request — reach out via <a href="https://www.linkedin.com/in/iuliia-golovchanskaia">LinkedIn</a>.
+    </footer>
+
+  </main>
+</body>
+</html>
