@@ -1,6 +1,8 @@
 % Copy to: cv-achievements.local.tex (do not commit) and replace placeholders
 % with your real achievements. Keep wording aligned with employer NDA / policies.
 \boolfalse{CVAchievementsPublic}
+
+% --- Playrix ---
 \renewcommand{\PlayrixAchOne}{%
 \textit{[Achievement 1: e.g.\ scope, impact, product area --- keep numbers only if allowed to disclose.]}%
 }
@@ -9,4 +11,29 @@
 }
 \renewcommand{\PlayrixAchThree}{%
 \textit{[Achievement 3: e.g.\ mentoring, leadership, org impact.]}%
+}
+
+% --- Computer Vision Systems ---
+\renewcommand{\CVSAchOne}{%
+\textit{[Achievement 1: e.g.\ service communication, architecture decisions.]}%
+}
+\renewcommand{\CVSAchTwo}{%
+\textit{[Achievement 2: e.g.\ performance improvements, refactoring impact.]}%
+}
+\renewcommand{\CVSAchThree}{%
+\textit{[Achievement 3: e.g.\ tooling, developer experience.]}%
+}
+
+% --- Simicon ---
+\renewcommand{\SimiconAchOne}{%
+\textit{[Achievement 1: e.g.\ desktop tooling for operators.]}%
+}
+\renewcommand{\SimiconAchTwo}{%
+\textit{[Achievement 2: e.g.\ inference acceleration, hardware optimization.]}%
+}
+\renewcommand{\SimiconAchThree}{%
+\textit{[Achievement 3: e.g.\ production integration, parallelism.]}%
+}
+\renewcommand{\SimiconAchFour}{%
+\textit{[Achievement 4: e.g.\ CV algorithms, detection pipeline.]}%
 }

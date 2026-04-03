@@ -2,106 +2,75 @@
 
 # Iuliia Golovchanskaia
 
-**Senior C++ Developer** · Cyprus
+**Senior C++ Software Engineer** · Cyprus
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iuliia-golovchanskaia)
-[![GitHub](https://img.shields.io/badge/GitHub-golju-181717?style=for-the-badge&logo=github)](https://github.com/golju)
+Eight years building performance-critical C++ — from real-time computer vision
+on embedded devices to game features serving millions of players.
 
-Game development · Computer vision · Performance · Modern C++
-
-<img src="https://readme-typing-svg.demolab.com?font=Source+Sans+Pro&size=22&duration=3000&pause=1000&color=5C6BC0&center=true&vCenter=true&width=600&lines=Lead+Programmer+at+Playrix+%7C+Fishdom;C%2B%2B17%2F20+%7C+Live+ops+%7C+AI-assisted+dev" alt="Typing intro" />
+[LinkedIn](https://www.linkedin.com/in/iuliia-golovchanskaia) · [GitHub](https://github.com/golju)
 
 </div>
 
 ---
 
-## About
+### About
 
-> About **eight years** bridging **mobile games** and **classical computer vision**. I own **game event** features end-to-end at **Playrix** on **Fishdom** — from **architecture** through shipping to **live-ops** delivery — with earlier work on **industrial CV / 3D** and **traffic analytics**. I care about **performance**, **engineering quality**, and **AI-assisted workflows** that actually help teams ship.
-
-| | |
-|:---|:---|
-| **Now** | Lead Programmer @ Playrix · Fishdom · Cyprus |
-| **Focus** | **Game event systems** & **live-ops** in C++ (architecture → shipping); **performance** & reliability; team standards, **reviews**, **mentoring** |
-| **Also** | Public speaking (C++ Russia, YaTalks, …) · SPIE publications |
+8 years of experience in performance-critical C++ across multiple domains. Own game event features end-to-end on Fishdom (545M+ downloads, 15M MAU), from architecture to live-ops. Previously worked on industrial computer vision, 3D reconstruction, and real-time traffic analysis on embedded devices. Focus on delivery, product-minded engineering, and AI-assisted workflows.
 
 ---
 
-## What’s in the CV
+### Core Expertise
 
-Source → **`Golovchanskaia_CV.tex`** → PDF **`Golovchanskaia_CV.pdf`**
-
-| Section | Contents |
-|:---:|:---|
-| **Summary** | Experience in games + computer vision; **Fishdom** context (reach / MAU); owning **game event** features end-to-end; architecture through **live-ops**; quality and **AI-assisted** engineering |
-| **Skills** | Strong **C++** for shipping (perf, concurrency, tooling); **CMake** / **Linux** / **tests** / **CI**; **AI-assisted** workflow (**Cursor**); **games** + **computer vision** background |
-| **Experience** | Playrix → HSE (C++ teaching) → **Computer Vision Systems** → Simicon |
-| **Education** | ITMO (MSc) · SPbU (BSc) |
-| **Certifications** | e.g. **NEBIUS** — AI-Assisted Programming |
-| **Speaking** | C++ Russia, PiterPy, YaTalks, … |
-| **Publications** | **SPIE** proceedings (2021) — full citations & publisher links in the CV |
-
-Certificate notes & PDF naming → [`certificates/README.md`](certificates/README.md)
+**C++ (C++17/20):** STL (containers/algorithms), templates, RAII, smart pointers, move semantics, OOP, exception safety<br>
+**Domains:** Real-time systems, performance-critical C++ (mobile, embedded), computer vision (OpenCV)<br>
+**Performance:** Profiling (Tracy), latency reduction, memory optimization<br>
+**Toolchain & Platforms:** CMake, Git, bash, CI/CD (TeamCity), Linux/macOS/Windows, Visual Studio, CLion, Qt<br>
+**AI & Tooling:** LLM-assisted development, internal developer tools / AI agents, Developer Enablement<br>
+**Concurrency:** std::thread, POSIX Threads, synchronization primitives<br>
+**GPU / Acceleration:** CUDA, SIMD (NEON, SSE), neural network inference optimization<br>
+**Engineering Practices:** Design Review, Code Review, Agile/Scrum, task decomposition, performance evaluation, mentoring & teaching<br>
+**Testing & Quality:** Unit testing (Google Test), static analysis (PVS-Studio)<br>
+**Other Languages:** Python (prototyping, research, tooling)
 
 ---
 
-## Tech snapshot
+### Selected Experience
 
-*Not the full skills table — that lives in **`Golovchanskaia_CV.pdf**. These are the pillars that show up across games + CV work.*
+**Playrix · Lead Programmer** — 2022–present<br>
+Fishdom — match-3 mobile game, 545M+ downloads, 15M MAU. Promoted from Programmer (2023).
 
-![C++](https://img.shields.io/badge/C%2B%2B-17%2F20-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-AI--assisted%20workflow-181717?style=flat-square&logo=cursor&logoColor=white)
-![Game dev](https://img.shields.io/badge/Game%20dev-6A1B9A?style=flat-square)
+- Own architecture and end-to-end delivery of game event systems: state machine lifecycle, progression and reward logic, analytics pipelines, live-ops content
+- Drove AI-assisted development (Cursor) into engineering workflows; built internal AI agents improving speed and code quality across feature teams
+- Established engineering standards: design reviews, code review processes, delivery quality gates, and developer performance evaluation guidelines
 
-<sub>Also in the CV: **OpenCV** (computer-vision roles), **Qt** (earlier roles), multithreading & profiling, **CUDA** / SIMD where it mattered, **Windows**, **TeamCity**, **Google Test**, …</sub>
+**Computer Vision Systems · Software Engineer** — 2020–2021<br>
+Industrial computer vision and urban 3D reconstruction for enterprise clients (oil industry, Huawei).
 
----
+- Developed software for industrial computer vision systems (quality control automation) and urban 3D reconstruction, including city-scale modeling, performance optimization, and service-level communication
 
-## This repository
+**Simicon · Software Engineer** — 2018–2020<br>
+Traffic camera systems for road safety and automated violation detection.
 
-LaTeX source with two build modes: **public** (GitHub-safe stubs + NDA-soft achievements) and **private** (real contacts & full bullets via local files).
+- Developed software components for real-time data processing, computer vision, and neural network integration
 
-### Build
-
-```bash
-pdflatex -interaction=nonstopmode Golovchanskaia_CV.tex
-```
-
-Run **twice** if you need clean hyperref metadata. Needs **pdfLaTeX** + **fontawesome5**, **hyperref**, **tabularx**, **enumitem**, **etoolbox**.
-
-<details>
-<summary><strong>Public vs full CV — which files?</strong></summary>
-
-| File | In git? | Purpose |
-|:---:|:---:|:---|
-| `Golovchanskaia_CV.tex` | yes | Main document |
-| `cv-contact-public.tex` | yes | Placeholder contacts in PDF header |
-| `cv-contact.local.tex` copy | **gitignored** | Real email / phone / Telegram |
-| `cv-achievements-public.tex` | yes | Safe bullet text |
-| `cv-achievements.local.tex` copy | **gitignored** | Detailed achievements |
-
-Copy from `*.example` → fill → compile. **Do not commit** `*.local.tex`.
-
-**Public build:** temporarily move or omit the two `.local.tex` files.
-
-</details>
-
-**Tree (main pieces)**
-
-```
-Golovchanskaia_CV.tex
-cv-contact-public.tex      +  cv-contact.local.tex.example
-cv-achievements-public.tex +  cv-achievements.local.tex.example
-certificates/
-docs/                      # optional notes (e.g. résumé / ATS research)
-```
-
-Optional note (not needed to compile): [`docs/senior_cpp_resume_format_research.md`](docs/senior_cpp_resume_format_research.md) — résumé format / ATS research.
+**Higher School of Economics · C++ Instructor** — 2021–2022<br>
+Taught undergraduate C++ programming: algorithms, data structures, software development practices.
 
 ---
 
-**About the LaTeX template:** The CV is based on **autoCV** (open source, MIT license, author Jitin Nair). In `Golovchanskaia_CV.tex` at the very top there is a short comment with that credit — if someone copies this project, that line should stay, as the license asks.
+### Speaking & Publications
+
+**Conferences** — C++ Russia (invited expert and host, 2020–2023) · YaTalks 2023 · C++ Zero Cost Serbia 2023 · PiterPy · PyLadies<br>
+**Publications** — SPIE proceedings (2021): [Mixed reality systems](https://doi.org/10.1117/12.2597182) · [Real-time object tracking in AR/MR](https://doi.org/10.1117/12.2604208)
+
+---
+
+### Education & Certifications
+
+**MSc** Software Engineering — ITMO University (2022)<br>
+**BSc** Applied Mathematics and Computer Science — Saint Petersburg State University (2019)<br>
+**Cert** [AI-Assisted Programming](certificates/README.md) — Nebius Academy (2025)
+
+---
+
+<sub>Full CV with detailed achievements available on request — reach out via <a href="https://www.linkedin.com/in/iuliia-golovchanskaia">LinkedIn</a>.</sub>
